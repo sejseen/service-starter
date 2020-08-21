@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Konrad Tyma<kty@spyro-soft.com>
+      logicalFilePath: classpath:db/changelog/v.0.0.1/changelog.yml
+      sqlFile:
+        path: 001_user_model.sql
+        relativeToChangelogFile: true
+  - changeSet:
+      id: 2
+      author: Konrad Tyma<kty@spyro-soft.com>
+      logicalFilePath: classpath:db/changelog/v.0.0.1/changelog.yml
+      sqlFile:
+        path: 002_authentication_token_model.sql
+        relativeToChangelogFile: true
+  - changeSet:
+      id: 3
+      author: Konrad Tyma<kty@spyro-soft.com>
+      logicalFilePath: classpath:db/changelog/v.0.0.1/changelog.yml
+      sqlFile:
+        path: 003_application_event_store_model.sql
+        relativeToChangelogFile: true

@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /portal-service
+spring:
+  datasource:
+    url: jdbc:tc:postgis:10:///platform_db
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  liquibase:
+    change-log: classpath:db/changelog/changelog.yaml
+    enabled: true
+auth:
+  jwt:
+    jwtSecret: xazxlfg2
+    jwtExpirationMs: 86400000
+api:
+  base-url: http://localhost:8080
