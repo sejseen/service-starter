@@ -1,10 +1,10 @@
 version: '3'
 services:
-  postgres-sevensense:
+  postgres:
     build: .
     ports:
       - "5432:5432"
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: sevensensedb
-      POSTGRES_DB: sevensense
+      POSTGRES_PASSWORD: passdb
+      POSTGRES_DB: passdb

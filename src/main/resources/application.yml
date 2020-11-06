@@ -3,9 +3,9 @@ server:
     context-path: /portal-service
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/sevensense?currentSchema=portal
+    url: jdbc:postgresql://localhost:5432/portal?currentSchema=portal
     username: postgres
-    password: sevensensedb
+    password: passdb
     driverClassName: org.postgresql.Driver
   liquibase:
     change-log: classpath:db/changelog/changelog.yaml
